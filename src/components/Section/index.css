@@ -1,0 +1,15 @@
+.section-wrap {
+    padding: 0 40px;
+}
+.section-title {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+    .section-wrap {
+        padding: 10px;
+    }
+    .section-wrap:last-child {
+        margin-bottom: 40px;
+    }
+}

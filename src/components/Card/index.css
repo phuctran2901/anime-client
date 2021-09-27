@@ -1,0 +1,95 @@
+.card-wrap {
+    margin: 0 10px;
+    width: 100%;
+    padding: 0 10px;
+}
+.card-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+.card-thumbnail img {
+    width: 100%;
+    transition: 0.5s ease;
+    height: 150px;
+}
+.card-wrap:hover .card-overlay {
+    transition: 0.5s ease;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 5;
+}
+.card-wrap:hover .card-play {
+    transition: 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+}
+.card-wrap:hover .card-thumbnail img {
+    transition: 0.5s ease;
+    transform: scale(1.2);
+}
+
+.card-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3f9fff;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 6;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+.card-name {
+    display: block;
+    text-decoration: none;
+    margin: 15px 0 5px 0;
+    font-weight: 500;
+    color: #333333;
+    transition: 0.5s ease;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.card-lastEpisode {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.card-time {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #3f9fff;
+    z-index: 10;
+}
+@media screen and (max-width: 768px) {
+    .card-wrap {
+        margin: 0;
+    }
+}

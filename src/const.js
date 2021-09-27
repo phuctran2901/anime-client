@@ -1,0 +1,1 @@
+export const URL_API = "https://netime.glitch.me/api/v1";
